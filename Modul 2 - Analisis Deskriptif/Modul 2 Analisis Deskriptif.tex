@@ -1,0 +1,571 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\usepackage[normalem]{ulem}
+% Avoid problems with \sout in headers with hyperref
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{modul-ii-analisis-deskriptif}{%
+\section{\texorpdfstring{MODUL II\\
+ANALISIS DESKRIPTIF
+}{MODUL II ANALISIS DESKRIPTIF }}\label{modul-ii-analisis-deskriptif}}
+
+\hypertarget{tujuan}{%
+\subsection{Tujuan}\label{tujuan}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{quote}
+  Praktikan mampu memahami analisis deskriptif
+  \end{quote}
+\item
+  \begin{quote}
+  Praktikan mampu melakukan analisis deskriptif
+  \end{quote}
+\end{enumerate}
+
+\hypertarget{section}{%
+\subsection{}\label{section}}
+
+\hypertarget{alat-dan-data}{%
+\subsection{Alat dan Data}\label{alat-dan-data}}
+
+Alat:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{quote}
+  Komputer dan Perangkatnya
+  \end{quote}
+\item
+  \begin{quote}
+  Aplikasi Stata
+  \end{quote}
+\end{enumerate}
+
+Data:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{quote}
+  Proposal Penelitian (Sebagai Acuan Praktikum)
+  \end{quote}
+\item
+  \begin{quote}
+  Perangkat Survei
+  \end{quote}
+\item
+  \begin{quote}
+  Data Hasil Survei
+  \end{quote}
+\end{enumerate}
+
+\hypertarget{teori-dasar}{%
+\subsection{Teori Dasar}\label{teori-dasar}}
+
+Secara umum, statistik deskriptif bertujuan untuk mereduksi data
+sehingga dengan penampilan yang lebih sederhana dapat mendeskripsikan
+karakteristik data.
+
+\hypertarget{analisis-deskriptif}{%
+\subsection{\texorpdfstring{\uline{ANALISIS
+DESKRIPTIF}}{ANALISIS DESKRIPTIF}}\label{analisis-deskriptif}}
+
+Analisis deskriptif adalah suatu cara menggambarkan persoalan
+berdasarkan data yang dimiliki, yakni dengan cara menata data tersebut
+sedemikian rupa sehingga dengan mudah dapat dipahami karakteristiknya,
+dapat dijelaskan dan digunakan untuk keperluan selanjutnya melalui
+sebuah proses reduksi data. Reduksi data merupakan metode untuk
+meringkas sekumpulan data ke dalam kumpulan data yang lebih kecil yang
+menggambarkan pengamatan awal tanpa mengorbankan informasi penting.
+Analisis statistik deskriptif lebih berhubungan dengan kegiatan
+pengumpulan, peringkasan, dan penyajian data. Analisis ini melibatkan
+penggunaan sejumlah kecil angka, tabel, dan grafik untuk menyimpulkan
+sederet angka yang lebih besar. Secara umum, metode reduksi data dibagi
+menjadi tiga, yaitu:
+
+\begin{enumerate}
+\def\labelenumi{\Alph{enumi}.}
+\item
+  \begin{quote}
+  Reduksi Data Dasar
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Reduksi data dasar membantu menunjukkan distribusi data secara
+menyeluruh dan cepat. Reduksi data dasar terbagi menjadi tiga jenis,
+yaitu:
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{quote}
+  Reduksi Data dalam Nilai Baku
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Reduksi data dengan cara membuat perbandingan antara jumlah kejadian
+dalam suatu kategori terhadap jumlah kejadian pada kategori lain maupun
+keseluruhan, baik yang nyata maupun yang potensial terjadi. Bentuk
+reduksi data dalam nilai baku adalah proporsi, prosentase, \emph{rates},
+dan rasio.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \begin{quote}
+  Reduksi Data dalam Tabel
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Reduksi data dalam bentuk tabel distribusi frekuensi, yaitu tabel yang
+meringkas distribusi nilai variabel dengan menunjukkan jumlah kejadian
+pada setiap kategori nilai variabel.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \begin{quote}
+  Reduksi Data dalam Chart/Grafik
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Reduksi data dalam Chart/Grafik, yaitu reduksi data dalam bentuk gambar
+yang dapat menunjukkan chart/grafik yang bermacam-macam sesuai
+kebutuhan. Namun, chart/grafik yang paling umum digunakan adalah
+\emph{pie chart} yang menggunakan permukaan lingkaran untuk
+menggambarkan distribusi proporsi antar kategori, \emph{bar chart} yang
+menggunakan balok untuk menggambarkan distribusi proporsi, histogram
+yang menggunakan balok untuk menggambarkan distribusi frekuensi data
+interval rasio, dan \emph{frequency polygons} yang menggunakan titik
+untuk menggambarkan distribusi frekuensi data interval rasio.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\Alph{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \begin{quote}
+  Ukuran Kecenderungan Memusat
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Ukuran kecenderungan memusat merupakan ukuran yang menunjukkan pada
+nilai variabel mana kejadian cenderung terkonsentrasi. Ukuran
+kecenderungan memusat yang digunakan ada tiga yaitu:
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{quote}
+  Modus
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Modus adalah nilai yang paling banyak muncul. Modus digunakan sebagai
+tipe skala pengukuran kecenderungan memusat pada data nominal.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \begin{quote}
+  Median
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Median adalah nilai variabel dari objek yang mempunyai setengah jumlah
+objek di atasnya dan setengah jumlah objek di bawahnya setelah semua
+nilai variabel objek diurutkan dari yang terkecil sampai yang terbesar.
+Median digunakan sebagai tipe skala pengukuran kecenderungan memusat
+pada data ordinal.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \begin{quote}
+  Mean
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Mean adalah rata-rata hitung nilai variabel yan g dimiliki seluruh
+objek. Mean digunakan sebagai tipe skala pengukuran kecenderungan
+memusat pada data interval rasio. Adapun rumus mean yaitu:
+\end{quote}
+
+\(= \ \frac{X_{i}}{n}\ \)
+
+\begin{enumerate}
+\def\labelenumi{\Alph{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \begin{quote}
+  Ukuran Persebaran Data
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Ukuran persebaran data adalah suatu ukuran yang memberikan suatu
+indikasi tingkat heterogenitas atau keragaman dalam distribusi nilai
+variabel. Terdapat tiga skala pengukuran yang digunakan sebagai ukuran
+persebaran data yaitu:
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{quote}
+  Indeks Variansi Kualitatif
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Indeks variansi kualitatif adalah rasio jumlah variasi yang diamati
+secara nyata dalam suatu distribusi nilai pada variasi maksimum yang
+dapat terjadi dalam distribusi tersebut. IQV kerap digunakan untuk
+melihat persebaran data pada data nominal. Indeks variansi kualitatif
+(IQV) dapat dihitung menggunakan rumus:
+\end{quote}
+
+\(IQV = \ \frac{k\ (N^{2} - \ f_{i}^{2})}{N^{2\ }(k - 1)}\)
+
+\begin{quote}
+Dengan:
+
+k = jumlah kategori
+
+N = jumlah kasus/objek
+
+f\textsubscript{i} = jumlah kasus/objek dalam kategori i
+
+IQV = 0 memiliki arti bahwa tingkat heterogenitas rendah atau dapat
+dikatakan seragam
+
+IQV = 1 memiliki arti bahwa tingkat heterogenitas tinggi
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \begin{quote}
+  Rentang
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Rentang merupakan selisih nilai variabel objek yang terbesar dan yang
+terkecil. Rentang digunakan untuk melihat persebaran data pada data
+ordinal.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \begin{quote}
+  Variansi dan Standar Deviasi/Simpangan Baku
+  \end{quote}
+\end{enumerate}
+
+\begin{quote}
+Variansi adalah nilai rata-rata kuadrat selisih nilai variabel setiap
+objek dengan nilai rata-rata variabel. Variansi dan standar deviasi
+digunakan untuk melihat persebaran data pada interval rasio. Nilai
+standar deviasi terkecil adalah 0 dimana semakin besar nilai variansi
+dan standar deviasi maka data makin bervariasi. Variansi dan standar
+deviasi dapat dihitung dengan rumus:
+\end{quote}
+
+\(\text{Variansi\ }\left( S^{2} \right) = \ \frac{(X_{i} - \ )}{n}\)
+
+\(\text{Standar\ Deviasi\ }(S) = \ \)
+
+\begin{quote}
+Dengan:
+
+N = jumlah data
+
+X\textsubscript{i} = data ke-i
+
+X̄ = rata-rata sampel/populasi
+\end{quote}
+
+\hypertarget{pengolahan-data-dan-analisis}{%
+\subsection{Pengolahan Data dan
+Analisis}\label{pengolahan-data-dan-analisis}}
+
+Dalam praktikum ini akan dilakukan uji missing value, uji normalitas
+data, analisis deskriptif (reduksi data).
+
+\hypertarget{uji-missing-value}{%
+\subsubsection{UJI MISSING VALUE}\label{uji-missing-value}}
+
+Pada uji ini digunakan data ``Dataset Analisis Deskriptif''.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Mencari missing value
+\end{enumerate}
+
+\begin{quote}
+Missing value pada variabel yang dituju dapat ditemukan dengan command:
+
+\textbf{list Nama\_Responden Total\_Pendapatan if missing(
+Total\_Pendapatan )}
+
+Dengan command tersebut akan ditampilkan variabel Nama\_Responden yang
+variabel Total\_Pendapatan-nya kosong dalam bentuk tabel seperti
+berikut.
+
+\includegraphics[width=2.54167in,height=2.23958in]{media/image7.png}
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  Menghilangkan data \emph{missing value}
+\end{enumerate}
+
+\begin{quote}
+Apabila terdapat data missing value, maka dapat dilakukan penghilangan
+data objek tersebut. Pada data nominal, opsi ini lah yang lebih tepat
+digunakan. Penghilangan data dapat menggunakan command:
+
+\textbf{drop if missing(Alamat)}
+
+\includegraphics[width=2.17708in,height=0.35417in]{media/image5.png}
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  Mengganti missing value dengan mean
+\end{enumerate}
+
+\begin{quote}
+Pada data interval rasio, ukuran pemusatan data yang digunakan adalah
+mean sehingga untuk missing value pada skala data interval rasio dapat
+diganti dengan mean menggunakan command:
+
+\textbf{replace Total\_Pendapatan = (mean) if
+missing(Total\_Pendapatan)}
+
+Mean diisi dengan mean variabel tersebut yang dapat didapatkan
+menggunakan command: \textbf{summarize Total\_Pendapatan}
+
+Pada praktikum ini, mean dari variabel Total\_Pendapatan adalah 4092841
+sehingga setelah dimasukkan command untuk mengganti missing value dengan
+mean didapatkan hasil seperti berikut pada STATA.
+
+\includegraphics[width=9.97128in,height=0.53836in]{media/image6.png}
+\end{quote}
+
+\hypertarget{analisis-deskriptif-1}{%
+\subsubsection{ANALISIS DESKRIPTIF}\label{analisis-deskriptif-1}}
+
+\uline{Reduksi Data: Tabel Frekuensi}
+
+Command: \textbf{tabulate Jenis\_Kelamin}
+
+Dengan memasukkan command tersebut akan muncul tabel frekuensi dari
+variabel Jenis\_Kelamin sebagai berikut.
+
+\includegraphics[width=3.625in,height=1.52083in]{media/image2.png}
+
+\uline{Reduksi Data: Grafik}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Pie Chart
+\end{enumerate}
+
+\begin{quote}
+Command: \textbf{graph pie, over(Jenis\_Kelamin) plabel(\_all percent)}
+
+Dengan command tersebut akan muncul pie chart yang memuat variabel
+Jenis\_Kelamin seperti berikut.
+
+\includegraphics[width=4.30719in,height=3.15536in]{media/image8.png}
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  Bar Chart
+\end{enumerate}
+
+\begin{quote}
+Command: \textbf{graph bar (count), over(Anggota\_Keluarga)}
+
+Dengan command tersebut akan muncul bar chart yang memuat variabel
+Anggota\_Keluarga seperti berikut.
+
+\includegraphics[width=3.61269in,height=2.64625in]{media/image1.png}
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  Histogram
+\end{enumerate}
+
+\begin{quote}
+Command: \textbf{histogram Usia}
+
+Dengan command tersebut akan muncul histogram yang memuat variabel Usia
+seperti berikut.
+
+\includegraphics[width=4.01953in,height=2.9418in]{media/image3.png}
+\end{quote}
+
+\uline{Ukuran Kecenderungan Terpusat dan Tingkat Persebaran}
+
+Command: \textbf{summarize Total\_Pendapatan}
+
+Dengan command tersebut akan muncul tabel berikut.
+
+\includegraphics[width=10.66236in,height=0.95512in]{media/image11.png}
+
+Command: \textbf{summarize Total\_Pendapatan, detail}
+
+Dengan command tersebut akan muncul tabel berikut. Tabel dengan command
+ini lebih lengkap dengan tambahan nilai median (50\%), variansi,
+skewness, dan kurtosis.
+
+\includegraphics[width=11.98865in,height=3.66172in]{media/image13.png}
+
+\uline{Tabel Deskripsi Variabel Yang Diklasifikasikan Berdasarkan Konten
+Variabel Lain}
+
+Command: \textbf{table Jenis\_Kelamin, contents(count Frekuensi\_Sakit
+min Frekuensi\_Sakit max Frekuensi\_Sakit mean Frekuensi\_Sakit )}
+
+\includegraphics[width=10.84565in,height=1.36953in]{media/image10.png}
+
+Untuk melihat box-plot dari Frekuensi\_Sakit berdasarkan Jenis\_Kelamin
+dapat digunakan command: \textbf{graph box Frekuensi\_Sakit,
+over(Jenis\_Kelamin)}
+
+\includegraphics[width=4.64501in,height=3.39957in]{media/image4.png}
+
+\uline{Tabel Deskripsi Variabel Yang Diklasifikasikan Berdasarkan Dua
+Konten Variabel Lain}
+
+Command: \textbf{table Jenis\_Kelamin, contents(count Frekuensi\_Sakit
+min Frekuensi\_Sakit max Frekuensi\_Sakit mean Frekuensi\_Sakit )
+by(Asuransi\_Kesehatan)}
+
+\includegraphics[width=10.14791in,height=2.56285in]{media/image12.png}
+
+Untuk melihat box-plot dari Frekuensi\_Sakit berdasarkan Jenis\_Kelamin
+dan Asuransi\_Kesehatan dapat digunakan command\textbf{: graph box
+Frekuensi\_Sakit, over(Jenis\_Kelamin) over( Asuransi\_Kesehatan)}
+
+\includegraphics[width=4.58834in,height=3.35779in]{media/image9.png}
+
+\hypertarget{pustaka}{%
+\subsection{Pustaka}\label{pustaka}}
+
+Sawitri, Dewi. Maryati, Sri. 2014. \emph{Metode Analisis Perencanaan.}
+Penerbit Universitas Terbuka: Tangerang.
+
+Healey J F, Statistics, A Tool for Social Research, Ninth Edition,
+Wadsworth Publishing Company, 2012.
+
+Kachigan, Sam Kash. 1982. \emph{Statistical Analysis}. Radius Press: New
+York.
+
+Trihendradi, C. 2008. \emph{Step by Step STATA 16 Analisis Data
+Statistik}. Penerbit ANDI: Yogyakarta
+
+\end{document}
